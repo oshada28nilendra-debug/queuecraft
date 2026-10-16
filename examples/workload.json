@@ -1,0 +1,7 @@
+[
+  {"id":"A","arrival":0,"duration":4,"deadline":5},
+  {"id":"B","arrival":1,"duration":6,"deadline":14},
+  {"id":"C","arrival":1,"duration":2,"deadline":8},
+  {"id":"D","arrival":2,"duration":3,"deadline":6},
+  {"id":"E","arrival":20,"duration":1,"deadline":21}
+]

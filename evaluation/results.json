@@ -1,0 +1,335 @@
+[
+  {
+    "policy": "FIFO",
+    "jobs": [
+      {
+        "id": "A",
+        "arrival": 0,
+        "duration": 4,
+        "deadline": 5,
+        "start": 0,
+        "completion": 4,
+        "waiting": 0,
+        "turnaround": 4,
+        "tardiness": 0,
+        "deadline_missed": false
+      },
+      {
+        "id": "B",
+        "arrival": 1,
+        "duration": 6,
+        "deadline": 14,
+        "start": 4,
+        "completion": 10,
+        "waiting": 3,
+        "turnaround": 9,
+        "tardiness": 0,
+        "deadline_missed": false
+      },
+      {
+        "id": "C",
+        "arrival": 1,
+        "duration": 2,
+        "deadline": 8,
+        "start": 10,
+        "completion": 12,
+        "waiting": 9,
+        "turnaround": 11,
+        "tardiness": 4,
+        "deadline_missed": true
+      },
+      {
+        "id": "D",
+        "arrival": 2,
+        "duration": 3,
+        "deadline": 6,
+        "start": 12,
+        "completion": 15,
+        "waiting": 10,
+        "turnaround": 13,
+        "tardiness": 9,
+        "deadline_missed": true
+      },
+      {
+        "id": "E",
+        "arrival": 20,
+        "duration": 1,
+        "deadline": 21,
+        "start": 20,
+        "completion": 21,
+        "waiting": 0,
+        "turnaround": 1,
+        "tardiness": 0,
+        "deadline_missed": false
+      }
+    ],
+    "timeline": [
+      {
+        "kind": "job",
+        "id": "A",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "kind": "job",
+        "id": "B",
+        "start": 4,
+        "end": 10
+      },
+      {
+        "kind": "job",
+        "id": "C",
+        "start": 10,
+        "end": 12
+      },
+      {
+        "kind": "job",
+        "id": "D",
+        "start": 12,
+        "end": 15
+      },
+      {
+        "kind": "idle",
+        "start": 15,
+        "end": 20
+      },
+      {
+        "kind": "job",
+        "id": "E",
+        "start": 20,
+        "end": 21
+      }
+    ],
+    "metrics": {
+      "mean_waiting": 4.4,
+      "mean_turnaround": 7.6,
+      "mean_tardiness": 2.6,
+      "missed_deadlines": 2,
+      "makespan": 21,
+      "busy_ticks": 16,
+      "utilization": 0.7619047619047619
+    }
+  },
+  {
+    "policy": "SJF",
+    "jobs": [
+      {
+        "id": "A",
+        "arrival": 0,
+        "duration": 4,
+        "deadline": 5,
+        "start": 0,
+        "completion": 4,
+        "waiting": 0,
+        "turnaround": 4,
+        "tardiness": 0,
+        "deadline_missed": false
+      },
+      {
+        "id": "C",
+        "arrival": 1,
+        "duration": 2,
+        "deadline": 8,
+        "start": 4,
+        "completion": 6,
+        "waiting": 3,
+        "turnaround": 5,
+        "tardiness": 0,
+        "deadline_missed": false
+      },
+      {
+        "id": "D",
+        "arrival": 2,
+        "duration": 3,
+        "deadline": 6,
+        "start": 6,
+        "completion": 9,
+        "waiting": 4,
+        "turnaround": 7,
+        "tardiness": 3,
+        "deadline_missed": true
+      },
+      {
+        "id": "B",
+        "arrival": 1,
+        "duration": 6,
+        "deadline": 14,
+        "start": 9,
+        "completion": 15,
+        "waiting": 8,
+        "turnaround": 14,
+        "tardiness": 1,
+        "deadline_missed": true
+      },
+      {
+        "id": "E",
+        "arrival": 20,
+        "duration": 1,
+        "deadline": 21,
+        "start": 20,
+        "completion": 21,
+        "waiting": 0,
+        "turnaround": 1,
+        "tardiness": 0,
+        "deadline_missed": false
+      }
+    ],
+    "timeline": [
+      {
+        "kind": "job",
+        "id": "A",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "kind": "job",
+        "id": "C",
+        "start": 4,
+        "end": 6
+      },
+      {
+        "kind": "job",
+        "id": "D",
+        "start": 6,
+        "end": 9
+      },
+      {
+        "kind": "job",
+        "id": "B",
+        "start": 9,
+        "end": 15
+      },
+      {
+        "kind": "idle",
+        "start": 15,
+        "end": 20
+      },
+      {
+        "kind": "job",
+        "id": "E",
+        "start": 20,
+        "end": 21
+      }
+    ],
+    "metrics": {
+      "mean_waiting": 3.0,
+      "mean_turnaround": 6.2,
+      "mean_tardiness": 0.8,
+      "missed_deadlines": 2,
+      "makespan": 21,
+      "busy_ticks": 16,
+      "utilization": 0.7619047619047619
+    }
+  },
+  {
+    "policy": "EDF",
+    "jobs": [
+      {
+        "id": "A",
+        "arrival": 0,
+        "duration": 4,
+        "deadline": 5,
+        "start": 0,
+        "completion": 4,
+        "waiting": 0,
+        "turnaround": 4,
+        "tardiness": 0,
+        "deadline_missed": false
+      },
+      {
+        "id": "D",
+        "arrival": 2,
+        "duration": 3,
+        "deadline": 6,
+        "start": 4,
+        "completion": 7,
+        "waiting": 2,
+        "turnaround": 5,
+        "tardiness": 1,
+        "deadline_missed": true
+      },
+      {
+        "id": "C",
+        "arrival": 1,
+        "duration": 2,
+        "deadline": 8,
+        "start": 7,
+        "completion": 9,
+        "waiting": 6,
+        "turnaround": 8,
+        "tardiness": 1,
+        "deadline_missed": true
+      },
+      {
+        "id": "B",
+        "arrival": 1,
+        "duration": 6,
+        "deadline": 14,
+        "start": 9,
+        "completion": 15,
+        "waiting": 8,
+        "turnaround": 14,
+        "tardiness": 1,
+        "deadline_missed": true
+      },
+      {
+        "id": "E",
+        "arrival": 20,
+        "duration": 1,
+        "deadline": 21,
+        "start": 20,
+        "completion": 21,
+        "waiting": 0,
+        "turnaround": 1,
+        "tardiness": 0,
+        "deadline_missed": false
+      }
+    ],
+    "timeline": [
+      {
+        "kind": "job",
+        "id": "A",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "kind": "job",
+        "id": "D",
+        "start": 4,
+        "end": 7
+      },
+      {
+        "kind": "job",
+        "id": "C",
+        "start": 7,
+        "end": 9
+      },
+      {
+        "kind": "job",
+        "id": "B",
+        "start": 9,
+        "end": 15
+      },
+      {
+        "kind": "idle",
+        "start": 15,
+        "end": 20
+      },
+      {
+        "kind": "job",
+        "id": "E",
+        "start": 20,
+        "end": 21
+      }
+    ],
+    "metrics": {
+      "mean_waiting": 3.2,
+      "mean_turnaround": 6.4,
+      "mean_tardiness": 0.6,
+      "missed_deadlines": 3,
+      "makespan": 21,
+      "busy_ticks": 16,
+      "utilization": 0.7619047619047619
+    }
+  }
+]
